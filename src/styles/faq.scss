@@ -1,0 +1,53 @@
+@import 'variables';
+.faq{
+    background-color: $quarternary;
+    padding: 20px;
+    h1{
+        text-align: center;
+        font-family: $primaryFont;
+        color: $primary;
+        font-weight: bolder;
+    }
+    .question_answer{
+        
+        width: 80%;
+        margin: 20px auto;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        overflow: hidden;
+        
+        .question{
+            background-color: $primary;
+            color: $quarternary;
+            
+            label{
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                display: block;
+                cursor: pointer;
+                font-family: $secondaryFont;
+            }
+            
+            
+        }
+        input{
+            display: none;
+        }
+        .answer{
+            height: 0;
+            overflow: hidden;
+            font-family: $secondaryFont;
+            
+        }
+        input[type=checkbox]:checked ~ .answer{
+            height: max-content;
+            padding: 10px;
+            border: 1px solid $primary;
+            color: $primary;
+            
+            
+        }
+    }
+    
+}

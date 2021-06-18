@@ -1,0 +1,101 @@
+@import 'variables';
+header{
+    display: flex;
+    position: relative;
+    padding: 10px;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    max-width: 1000px;
+    top: 0;
+    a{
+        color: $quinary;
+    }
+    i{
+        font-size: 2em;
+        margin: 0 10px;
+        font-weight: bolder;
+    }
+
+    h1{
+        font-family: $primaryFont;
+        margin-right: auto;
+    }
+    .logo{
+        display: flex;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    .show-nav{
+        height: 300px;
+    }
+    nav{
+        position: fixed;
+        top: 68px;
+        left: 0;
+        width: 100vw;
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        height: 0;
+        box-shadow: 1px 3px 4px 1px rgb(124, 124, 124);
+        overflow: hidden;
+        z-index: 100;
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: .5s;
+        
+        
+        .navList{
+            margin-top: 10px;
+            width: 100%;
+            padding-top: 20px;
+            li{
+                margin: auto;
+                width: 100px;
+                padding: 10px;
+                font-family: $secondaryFont;
+                cursor: pointer;
+            }
+            .active{
+                li{
+                    background-color: $quinary;
+                    color: white;
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width : 900px){
+    header{
+        justify-content: space-between;
+        i{
+            display: none;
+        }
+        nav{
+            position: static;
+            width: max-content;
+            padding: 0;
+            background-color: transparent;
+            box-shadow: none;
+            
+            height: max-content;
+            
+            .navList{
+                display: flex;
+                padding: 0;
+                
+                li{
+                    margin: 0 !important;
+                    width: 70px;
+                    text-align: center;
+                }
+                
+            }
+        }
+    }
+}

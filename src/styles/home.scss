@@ -1,0 +1,194 @@
+@import 'variables';
+
+.home{
+    overflow: hidden;
+    
+    h2{
+        font-family: $primaryFont;
+        color: $primary;
+        text-align: center;
+        padding: 10px;
+
+    }
+    button{
+        outline: none;
+        border: none;
+        background-color: $primary;
+        padding: 10px;
+        color: white;
+        font-family: $secondaryFont;
+        font-weight: bolder;
+        box-shadow:  1px 1px 4px 1px $quinary;
+    }
+    .cover-photo{
+        width: 100%;
+        min-height: 90vh;
+        margin-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(30deg, $quarternary, $primary);
+        img{
+            width: 100%;
+        }
+        .cakeCover1{
+            display: none;
+        }
+        .cakeCover2{
+            position: absolute;
+            min-width: 550px;
+            width: 80%;
+            left: -270px;
+            max-width: 600px;
+            top: 100px;
+        }
+        .slogan{
+            position: absolute;
+            top: 40%;
+            left: 55%;
+            width: 36%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            h1{
+                font-family: $primaryFont;
+                color: $quarternary;
+                margin-bottom: 20px;
+            }
+            a{
+                width: 100%;
+            }
+            button{
+                width: 100%;
+                background-color: $secondary;
+                box-shadow:  1px 1px 4px 1px $quinary;
+
+            }
+        }
+    }
+    .short-gallery{
+        width: 100%;
+        margin: auto;
+        position: relative;
+        padding-top: 50px;
+        text-align: center;
+        .short-gallery-content{
+            width: 90%;
+            background-color: $secondary;
+            margin: auto;
+            height: 200px;
+            padding: 10px;
+            padding-top: 20px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+            
+
+        }
+
+        h2{
+            font-family: $primaryFont;
+            color: $quinary;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        
+        .short-gallery-images{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            img{
+                width: 90%;
+                margin: 5px;
+            }
+        }
+        button{
+            margin: 40px;
+        }
+    }
+    .how-to-order{
+        width: 100%;
+        min-height: 100px;
+        margin-top: 20px;
+        padding: 20px 0;
+        background-color: $tertiary;
+        
+        ul{
+            font-family: $secondaryFont;
+            
+            color: $primary;
+            li{
+                text-align: center;
+                margin: 40px;
+                i{
+                    font-size: 2em;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .customer-says{
+        margin-top: 30px;
+        .feedback{
+
+        }
+
+    }
+    .consult{
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+    }
+}
+@media only screen and (min-width : 1000px){
+    .home{
+        .how-to-order{
+            ul{
+                display: flex;
+                width: max-content;
+                margin: auto;
+            }
+        }
+
+    }
+}
+@media only screen and (min-width : 650px){
+    .home{
+        .cover-photo{
+            min-height: 650px;
+            .cakeCover2{
+                left: -150px;
+                top: 0;
+            }
+            .slogan{
+                h1{
+                    color: $quarternary;
+                }
+            }
+        }
+        
+        .short-gallery{
+            .short-gallery-content{
+                width: 98%;
+                height: 300px;
+                
+            }
+            .short-gallery-images{
+                img{
+                    width: 25%;
+                }
+            }
+        }
+        
+    }
+}
