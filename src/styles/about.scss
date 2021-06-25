@@ -5,12 +5,17 @@
     min-height: 100%;
     overflow: hidden;
     display: flex;
+    padding: 10px;
+    padding-top: 100px;
+    height: 700px;
     img{
         width: 50%;
         margin-left: -100px;
+        display: none;
+        
     }
     .aboutContent{
-        width: 50%;
+        width: 100%;
         display: flex;
         align-items: center;
         p{
@@ -21,4 +26,16 @@
         }
     }
 
+}
+
+@media only screen and (min-width: 600px){
+    .about{
+        img{
+            display: block;
+
+        }
+        .aboutContent{
+            width: 50%;
+        }
+    }
 }
