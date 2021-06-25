@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/celebrity-cake/static/css/main.70087852.chunk.css",
-    "main.js": "/celebrity-cake/static/js/main.ae02cfc6.chunk.js",
-    "main.js.map": "/celebrity-cake/static/js/main.ae02cfc6.chunk.js.map",
+    "main.js": "/celebrity-cake/static/js/main.74eed683.chunk.js",
+    "main.js.map": "/celebrity-cake/static/js/main.74eed683.chunk.js.map",
     "runtime-main.js": "/celebrity-cake/static/js/runtime-main.bcee0e6b.js",
     "runtime-main.js.map": "/celebrity-cake/static/js/runtime-main.bcee0e6b.js.map",
     "static/css/2.6ef2fac9.chunk.css": "/celebrity-cake/static/css/2.6ef2fac9.chunk.css",
@@ -53,6 +53,6 @@
     "static/css/2.6ef2fac9.chunk.css",
     "static/js/2.58ee3896.chunk.js",
     "static/css/main.70087852.chunk.css",
-    "static/js/main.ae02cfc6.chunk.js"
+    "static/js/main.74eed683.chunk.js"
   ]
 }
