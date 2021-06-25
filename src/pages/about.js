@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import chef from '../media/cakechef.png';
 import '../styles/about.scss';
 
 const About = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div className='about'>
             <img src={chef}/>

@@ -15,7 +15,7 @@ const Gallery = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
-        const imageLists = importAll(require.context('../media/allImage', false, /\.(png|jpe?g|svg)$/));
+        const imageLists = importAll(require.context('../media/allImageCompress', false, /\.(png|jpe?g|svg)$/));
         set_images(imageLists);
         
         

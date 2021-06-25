@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useEffect} from 'react';
 import '../styles/contact.scss';
 
 
@@ -19,6 +19,10 @@ const Contact = () => {
             link: '09063516689',
         },
     ];
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     
     return (
         <main className='contact'>

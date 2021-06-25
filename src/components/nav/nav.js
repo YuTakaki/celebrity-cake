@@ -22,7 +22,12 @@ const Nav = () => {
     ];
 
     const showNav = () => {
-        nav.current.classList.toggle('show-nav');
+        nav.current.classList.add('show-nav');
+    }
+
+    const closeNav = () => {
+        nav.current.classList.remove('show-nav');
+
     }
     return ( 
         <header>
@@ -32,7 +37,7 @@ const Nav = () => {
                 <Link to='/'><h1>Celebrity Cake</h1></Link>
             </div>
             
-            <nav ref={nav}>
+            <nav ref={nav} onClick={closeNav}>
                 <ul className='navList'>
                     {navLists.map(nav =>(
                         <NavLink exact to={`/${nav === 'Home' ? '' : nav}`}>
