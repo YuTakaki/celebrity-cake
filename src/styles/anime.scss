@@ -1,0 +1,6 @@
+@mixin animate{
+    .animate{
+        opacity: 1 !important;
+        transition: 1s;
+    }
+}

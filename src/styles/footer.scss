@@ -2,7 +2,85 @@
 
 footer{
     margin-top: auto;
-    min-height: 100px;
+    min-height: 90vh;
+    overflow: hidden;
     width: 100%;
-    background-color: $primary;
+    background: linear-gradient(90deg, $quarternary, $secondary);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        position: absolute;
+        top: -130px;
+        left: -200px;
+        width: 400px;
+    }
+    ul{
+        text-align: center;
+        li{
+            margin: 10px;
+            font-family: $secondaryFont;
+            font-size: 1.5em;
+            color: $primary;
+            &:hover{
+                color: $quarternary;
+            }
+        }
+    }
+    .socials{
+        display: flex;
+        justify-content: center;
+        a{
+            margin: 10px;
+            i{
+                font-size: 1.5em;
+                cursor: pointer;
+                color: $primary;
+                border: 1px solid $primary;
+                padding: 10px;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    color: $quarternary;
+                    border: 1px solid $quarternary;
+                }
+            }
+        }
+    }
+    .contactsInfo{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: $primary;
+        .contacts{
+            display: flex;
+            i{
+                margin-right: 10px;
+            }
+            a{
+                color: $primary;
+                text-decoration: underline;
+                &:hover{
+
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width : 600px){
+    footer{
+        min-height: 300px;
+        .contactsInfo{
+            left: auto;
+            right: 20px;
+        }
+    }
 }

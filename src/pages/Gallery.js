@@ -2,49 +2,42 @@ import '../styles/gallery.scss';
 import {useRef, useState, useEffect} from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import isVisible from '../method/onScroll';
+import { LaptopWindowsRounded } from '@material-ui/icons';
 
 const Gallery = () => {
 
     const galleryFilter = useRef();
     const [images, set_images] = useState([]);
-    const filterOptions = [
-        'All',
-        'Customized Cake',
-        'Minimalist Cake',
-        'Cake Pops',
-        'Cupcakes'
-    ]
-
-    const [filter, set_filter] = useState('All')
-
-    const showFilter = () => {
-        galleryFilter.current.classList.toggle('showFilter')
-    }
-
-    const changeFilter = (e) => {
-        set_filter(e.target.textContent);
-    }
     const importAll = (r) => {
         return r.keys().map(r);
     }
 
     useEffect(() => {
+        window.scrollTo(0, 0)
         const imageLists = importAll(require.context('../media/allImage', false, /\.(png|jpe?g|svg)$/));
         set_images(imageLists);
+        
+        
+        
+        
     }, [])
+
+    useEffect(() => {
+        const images = document.querySelectorAll('.gallery-images img');
+        [...images].slice(0, 11).forEach(img => {
+            img.classList.add('animate');
+        })
+        console.log([...images].slice(0, 12));
+    }, [images])
+
+
+    window.onscroll = () => {
+        const images = document.querySelectorAll('.gallery-images img');
+        isVisible([...images]);
+    }
     return ( 
         <main className='gallery'>
-            {/* <div ref={galleryFilter} className='gallery-filter-container'>
-                <div onClick={showFilter} className='gallery-filter'>
-                    <ul className='filterList'>
-                        {filterOptions.map(li => (
-                            <li onClick={changeFilter} className={li === filter ? 'activeFilter' : ''}>{li}</li>
-                        ))}
-                    </ul>
-
-                </div>
-            </div>
-            <i className='filter-icon' onClick={showFilter}>filter</i> */}
             <div className='gallery-images'>
                 {images.map(image => (
                     <img src={image.default} />

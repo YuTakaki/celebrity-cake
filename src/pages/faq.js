@@ -1,4 +1,6 @@
 import '../styles/faq.scss';
+import { useRef } from 'react';
+import isVisible from '../method/onScroll';
 
 const FAQ = () => {
     const question_answer = [
@@ -11,8 +13,6 @@ const FAQ = () => {
             answer : 'Our location is at Ab plaza 9 block b nahda 2 dubai uae'
         },
     ]
-
-    
     return ( 
         <main className='faq'>
             <h1>Frequently Ask Questions</h1>
