@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/celebrity-cake/static/css/main.70087852.chunk.css",
+    "main.css": "/celebrity-cake/static/css/main.c49b300e.chunk.css",
     "main.js": "/celebrity-cake/static/js/main.74eed683.chunk.js",
     "main.js.map": "/celebrity-cake/static/js/main.74eed683.chunk.js.map",
     "runtime-main.js": "/celebrity-cake/static/js/runtime-main.bcee0e6b.js",
@@ -12,7 +12,7 @@
     "static/js/3.e875a1ae.chunk.js.map": "/celebrity-cake/static/js/3.e875a1ae.chunk.js.map",
     "index.html": "/celebrity-cake/index.html",
     "static/css/2.6ef2fac9.chunk.css.map": "/celebrity-cake/static/css/2.6ef2fac9.chunk.css.map",
-    "static/css/main.70087852.chunk.css.map": "/celebrity-cake/static/css/main.70087852.chunk.css.map",
+    "static/css/main.c49b300e.chunk.css.map": "/celebrity-cake/static/css/main.c49b300e.chunk.css.map",
     "static/js/2.58ee3896.chunk.js.LICENSE.txt": "/celebrity-cake/static/js/2.58ee3896.chunk.js.LICENSE.txt",
     "static/media/20210424_043034.jpg": "/celebrity-cake/static/media/20210424_043034.9033411b.jpg",
     "static/media/20210425_072425.jpg": "/celebrity-cake/static/media/20210425_072425.5f2542ed.jpg",
@@ -52,7 +52,7 @@
     "static/js/runtime-main.bcee0e6b.js",
     "static/css/2.6ef2fac9.chunk.css",
     "static/js/2.58ee3896.chunk.js",
-    "static/css/main.70087852.chunk.css",
+    "static/css/main.c49b300e.chunk.css",
     "static/js/main.74eed683.chunk.js"
   ]
 }
