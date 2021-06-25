@@ -20,8 +20,8 @@ const Home = () => {
             description : 'send sample cakes'
         },
         {
-            icon : 'fas fa-truck',
-            description : 'message us on we chat'
+            icon : 'fa fa-truck',
+            description : 'cake is delivered'
         },
     ]
 
@@ -105,7 +105,7 @@ const Home = () => {
             </div>
             <FAQ />
             <div className='consult'>
-                <h2>Arrang cake consultation with us</h2>
+                <h2>Arrange cake consultation with us</h2>
                 <a href='https://api.whatsapp.com/send?phone=971502821739' target='_blank' ref={orderBtn}><button>Message us on whatsapp</button></a>
 
             </div>
